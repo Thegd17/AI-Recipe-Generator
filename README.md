@@ -2,6 +2,8 @@
 
 A smart web application that transforms images of ingredients into **delicious recipes** using artificial intelligence. Built with **Flask** and **Google's Gemini AI**, this tool helps home cooks and food enthusiasts discover new culinary creations from whatever ingredients they have on hand.
 
+ [https://ai-recipe-generator-0ncx.onrender.com/](https://ai-recipe-generator-0ncx.onrender.com/)
+
 ---
 
 ## ✨ Features
