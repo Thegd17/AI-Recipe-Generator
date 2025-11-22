@@ -101,22 +101,26 @@ recipe-creator/
 ├── render.yaml            # Render deployment configuration
 └── templates/
     └── index.html         # Frontend interface
+---
 
-🤝 Contributing
-Contributions are welcome! Please feel free to submit pull requests, report bugs, or suggest new features.
+## 🤝 Contributing
 
-Fork the repository.
+Contributions are welcome! Please feel free to submit **pull requests**, report bugs, or suggest new features.
 
-Create your feature branch (git checkout -b feature/AmazingFeature).
+1.  **Fork** the repository.
+2.  Create your feature branch (`git checkout -b feature/AmazingFeature`).
+3.  Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+4.  Push to the branch (`git push origin feature/AmazingFeature`).
+5.  Open a Pull Request.
 
-Commit your changes (git commit -m 'Add some AmazingFeature').
+---
 
-Push to the branch (git push origin feature/AmazingFeature).
+## 📄 License
 
-Open a Pull Request.
+This project is licensed under the **MIT License**.
 
-📄 License
-This project is licensed under the MIT License.
+---
 
-👤 Developer
-Created by Gaurav Dhangar – demonstrating full-stack development with AI integration and modern web technologies.
+## 👤 Developer
+
+Created by **Gaurav Dhangar** – demonstrating full-stack development with AI integration and modern web technologies.
