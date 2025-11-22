@@ -4,7 +4,7 @@ import io
 import traceback
 from dotenv import load_dotenv
 
-from flask import Flask, request, jsonify, render_template_string
+from flask import Flask, request, jsonify, render_template
 from PIL import Image, UnidentifiedImageError
 
 import google.genai as genai
@@ -14,7 +14,7 @@ from google.genai import types
 load_dotenv()  # make sure .env lines are plain KEY=VALUE (no `export`)
 
 # --- Config ---
-PORT = int(os.getenv("PORT", 5000))
+PORT = int(os.getenv("PORT", 10000))  # Changed to 10000 for Render
 MODEL_NAME = os.getenv("MODEL_NAME", "gemini-2.5-flash")
 MAX_UPLOAD_MB = int(os.getenv("MAX_UPLOAD_MB", 8))
 MAX_CONTENT_LENGTH = MAX_UPLOAD_MB * 1024 * 1024
@@ -101,11 +101,9 @@ def handle_all(e):
 
 
 # --- Routes ---
-from flask import render_template
 @app.route("/")
 def index():
     return render_template("index.html")
-
 
 
 @app.route("/generate-recipe", methods=["POST"])
@@ -187,4 +185,4 @@ def generate_recipe():
 # --- Run ---
 if __name__ == "__main__":
     debug_mode = os.getenv("FLASK_DEBUG", "false").lower() == "true"
-    app.run(host="127.0.0.1", port=PORT, debug=debug_mode)
+    app.run(host="0.0.0.0", port=PORT, debug=debug_mode)  # Changed to 0.0.0.0 for Render
